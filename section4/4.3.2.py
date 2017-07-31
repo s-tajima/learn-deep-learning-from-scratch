@@ -40,4 +40,4 @@ l.plt.plot([5, 5], [function_1(5), 0], ':', lw=1)
 
 l.plt.plot([0, 10], [function_1(10), function_1(10)], ':', lw=1)
 l.plt.plot([10, 10], [function_1(10), 0], ':', lw=1)
-l.plt_show_alt(l.plt)
+l.plt_show_alt(l.plt, "4.3.2")

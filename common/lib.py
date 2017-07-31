@@ -8,9 +8,10 @@ mpl.use('Agg')
 from matplotlib import pyplot as plt
 from PIL import Image
 
-def plt_show_alt(plt):
-    plt.savefig("/tmp/output.png")
-    process = Popen(["/usr/local/sbin/imgcat", "/tmp/output.png"])
+def plt_show_alt(plt, name):
+    filename = "./output-%s.png" % (name)
+    plt.savefig(filename)
+    process = Popen(["/usr/local/sbin/imgcat", filename])
     plt.clf()
 
 def img_show(img):
